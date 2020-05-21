@@ -1,0 +1,132 @@
+h2 {
+    font-family: 'Cinzel', serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-family: 'Cinzel', serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 15% auto;
+}
+
+.box-area {
+    animation: animate 10s ease-in-out infinite;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+
+}
+
+.box-area div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    box-shadow: 3px 3px 4px 4px #888888;
+}
+
+.box-area .box1 {
+    background-image: url('../images/fashion.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+
+}
+
+.box-area .box2 {
+    background-image: url('https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) translateZ(100px)
+}
+
+.box-area .box3 {
+    background-image: url('../images//makeup.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px)
+}
+
+.box-area .box4 {
+    background-image: url('https://images.unsplash.com/photo-1562887284-8ba6b7c90fd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px)
+}
+
+.box-area .box5 {
+    background-image: url('../images//jewerly.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+
+.box-area .box6 {
+    background-image: url('https://images.unsplash.com/photo-1579726670131-487ecc8e1e8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes animate {
+
+    from,
+    to {
+        transform: rotateX(0deg) rotateY(0deg)rotateZ(0deg);
+    }
+
+    16% {
+        transform: rotateY(-90deg);
+    }
+
+    33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+
+    66% {
+        transform: rotateY(-270deg) rotateX(90deg);
+    }
+
+    83% {
+        transform: rotateX(90deg);
+    }
+
+
+}
+
+.zigzag {
+    border: none;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40px;
+    background: linear-gradient(135deg, rgb(255, 255, 255) 25%, transparent 5%) -20px 0, linear-gradient(225deg, rgb(255, 255, 255) 25%, transparent 15%) -20px 0, linear-gradient(315deg, rgb(255, 255, 255) 25%, transparent 25%),
+        linear-gradient(45deg, rgb(255, 255, 255) 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: rgb(240, 175, 212);
+}
